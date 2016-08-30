@@ -21,3 +21,5 @@ Route::controllers([
 ]);
 
 Route::resource('clientes','ClienteController');
+Route::get('contratos','ClienteController@contratos');
+Route::get('prueba','ClienteController@prueba');

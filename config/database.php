@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'forge'),
-			'username'  => env('DB_USERNAME', 'forge'),
-			'password'  => env('DB_PASSWORD', ''),
+			'host'      => 'localhost',
+			'database'  => 'factu_bookie',
+			'username'  => 'root',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -76,14 +76,14 @@ return [
 		],
 
 		'sqlsrv' => [
-			'driver'   => 'sqlsrv',
-			'host'     => env('DESKTOP-G4SO86U'),
-			'database' => env('BookieAdmin'),
-			'username' => env('abiezer'),
-			'password' => env('123'),
-			'prefix'   => '',
-		],
-
+            'driver'   => 'sqlsrv',
+            'host'     => env('DB_HOST', 'localhost'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset'  => 'utf8',
+            'prefix'   => '',
+        ],
 	],
 
 	/*

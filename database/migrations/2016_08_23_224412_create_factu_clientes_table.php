@@ -15,8 +15,13 @@ class CreateFactuClientesTable extends Migration {
 		Schema::connection('mysql')->create('factu_clientes', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('rif');
+			$table->string('tipdoc');
+			$table->integer('numdoc');
 			$table->string('nombre');
+			$table->string('direccion');
+			$table->string('estado');
+			$table->string('ciudad');
+			$table->integer('CodSucursal');
 			$table->timestamps();
 		});
 	}
@@ -28,7 +33,7 @@ class CreateFactuClientesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('factu_clientes');
+		Schema::connection('mysql')->drop('factu_clientes');
 	}
 
 }
